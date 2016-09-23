@@ -1,3 +1,17 @@
+# Author    : Bhishan Poudel
+# Date      : Sep 23, 2016
+
+
+
+
+# Large files
+*.fits
+
+
+
+
+
+
 # Object files
 *.o
 *.ko
