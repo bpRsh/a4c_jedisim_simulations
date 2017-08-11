@@ -1,6 +1,0 @@
-out1/convolved/convolved_band_0.fits
-out1/convolved/convolved_band_1.fits
-out1/convolved/convolved_band_2.fits
-out1/convolved/convolved_band_3.fits
-out1/convolved/convolved_band_4.fits
-out1/convolved/convolved_band_5.fits
