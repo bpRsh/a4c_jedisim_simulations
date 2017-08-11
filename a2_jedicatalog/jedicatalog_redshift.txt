@@ -1,0 +1,25 @@
+May 08, 2017
+
+file: jedicatalog.c
+
+if(single_redshift == 0){
+    //get a redshift from the database
+    int redshift_num = rand() % red_db_bin_sizes[mag-min_mag];
+    gal.redshift = red_db[mag-min_mag][redshift_num];
+} else if(single_redshift == 1){
+    gal.redshift = fixed_redshift;
+} else {
+    fprintf(stderr, "Error: single_redshift must be either 0 or 1.");
+}
+
+
+redshift of the galaxy = red_db[mag-min_mag][redshift_num]
+
+red_db is a matrix.
+float       **red_db;         //redshift database: same format as radius_db
+
+red_db_bin_sizes = (long int *) calloc((max_mag-min_mag+1), sizeof(long int));
+red_db           = (float **)   calloc((max_mag-min_mag+1), sizeof(float*));
+
+red_db[mag_bin] = (float *) calloc(nred, sizeof(float));
+red_db_bin_sizes[mag_bin] = nred;
